@@ -29,13 +29,19 @@ of every response.
 VeriCompliance AI is a knowledge and compliance assistant designed to provide accurate and
 trustworthy answers from uploaded documents. Instead of relying on general AI knowledge, it searches
 through the provided files and generates responses only from verified content.
+
 •Verified Knowledge: Upload policies, contracts, compliance manuals, and meeting transcripts.
+
 • Traceable Answers: Ask questions and receive answers supported by document citation
+
 • Intelligent Summarization: Generate clear summaries of long documents.
+
 • Compliance Auditing: Check documents against compliance rules and receive pass or fail reports
 with supporting evidence.
+
 • Action able Insights: Extract action items from meeting transcripts and link them back to the original
 source.
+
 By making every answer traceable to the original document, VeriCompliance AI reduces AI
 hallucinations and helps organizations make decisions they can trust
 
@@ -44,10 +50,13 @@ hallucinations and helps organizations make decisions they can trust
 .Grounded RAG Pipeline:Implements a sophisticated Retrieval-Agumented
 Generation(RAG)system with structured citations including exact Page,Line ,and
 Paragraph metadata
+
 2.Deterministic Refusal Protocol: A safety layer that refuses to output responses if
 semantic search confidence drops below a specific threshold ,ensuring zero guesswork.
+
 3.ComplianceAudit Engine: Automates the evaluation of unstructured documents
 against customisable or template-based compliance matrices.
+
 4.Hardened Security:Built with enterprise-level RBAC,Multi-Tenant isolation,JWT with
 Argon2, and encrypted vector storage
 
@@ -64,12 +73,30 @@ Argon2, and encrypted vector storage
 Get the full stack running in under 2 minutes:
 
 git clone https://github.com/nini747heyyy/VeriComplianceAI.git
+
 cd VeriComplianceAI
+
 docker-compose up /-build
 
 Access the dashboard at http://localhost:3000 .
-Get the full stack running in under 2 minutes:
-📦
-👥 The Team
-Built up ⚖ 💻 by the team Gryffindor- Anushka Sharma(Team lead), Devangi
-Banerjee, Sreeja Guha for the Hackathon-Deploy or Redacted,2026
+
+## 🚀 Meet the Team — The Compliance Crew
+
+**4 minds. 1 mission. 0 tolerance for hallucinations.**
+
+ 🧑‍💻 Names:
+
+1. Anushka Sharma ( Team Lead )
+
+2. Devangi Banerjee
+ 
+3. Sreeja Guha
+
+> **Built under pressure. Driven by innovation.  
+> Engineered for trustworthy AI.**
+
+ 🛡️ Trust, Grounding & Evidence — At a Glance
+
+<img width="1418" height="902" alt="image" src="https://github.com/user-attachments/assets/07e5a775-479e-4d1f-a84c-d9941159531b" />
+
+
