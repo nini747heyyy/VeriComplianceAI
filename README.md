@@ -1,24 +1,75 @@
 # VeriCompliance AI – Knowledge & Compliance Agent Platform
 
-VeriCompliance AI is an enterprise-grade platform engineered to eliminate artificial intelligence hallucinations in high-stakes legal, regulatory, and corporate compliance operations.
+“In legal and regulatory compliance, a 95% accurate AI is a 100% liability.”
 
-## Key Features
+VeriCompliance AI is an enterprise-grade platform engineered to eliminate artificial intelligence
+hallucinations in high-stakes legal, regulatory, and corporate compliance operations. By
+combining Deterministic Refusal Protocols with Granular Grounding, we ensure every
+answer is backed by verifiable evidence.
 
-1. **Grounded RAG Pipeline**: Structured citations including exact Page, Line, and Paragraph metadata.
-2. **Deterministic Refusal Protocol**: Refuses to output responses if semantic search confidence drops below threshold.
-3. **Compliance Audit Engine**: Evaluates unstructured documents against customizable or template-based compliance matrices.
-4. **Hardened Security**: Enterprise-level RBAC, Multi-Tenant isolation, JWT with Argon2, and encrypted vector storage.
+🚀 The Problem
 
-## Architecture
+Organizations deal with a huge number of documents every day, including company policies,
+compliance guidelines, contracts, legal documents, and meeting transcripts. Most of this
+information is unstructured, making it difficult to find the right answers quickly.
+Although Large Language Models (LLMs) are great at understanding language, they can
+sometimes generate information that is incorrect but sounds convincing. This becomes a serious
+problem in compliance, legal, healthcare, and finance, where every answer must be accurate and
+backed by real evidence. A compliance officer cannot rely on a system that invents regulations or
+misinterprets policies.
+Most AI chatbots answer questions using their general knowledge instead of the organization's
+actual documents. As a result, users have no way to verify whether the information is correct or
+where it came from.
+The challenge is to build a knowledge and compliance agent that understands unstructured
+documents, gives reliable answers based only on the provided data, and clearly shows the source
+of every response.
 
-* **Frontend**: Next.js 15 (App Router), React 19, Tailwind CSS, Lucide Icons, Zustand.
-* **Backend**: FastAPI, SQLAlchemy, Pydantic, Celery, Redis.
-* **Vector Database**: ChromaDB (Default) with Pinecone & FAISS support.
-* **AI Core**: LangChain, LangGraph, OpenAI GPT-4o.
+✨Our Solution- VeriCompliance AI
 
-## Quick Start (Docker Orchestration)
+VeriCompliance AI is a knowledge and compliance assistant designed to provide accurate and
+trustworthy answers from uploaded documents. Instead of relying on general AI knowledge, it searches
+through the provided files and generates responses only from verified content.
+•Verified Knowledge: Upload policies, contracts, compliance manuals, and meeting transcripts.
+• Traceable Answers: Ask questions and receive answers supported by document citation
+• Intelligent Summarization: Generate clear summaries of long documents.
+• Compliance Auditing: Check documents against compliance rules and receive pass or fail reports
+with supporting evidence.
+• Action able Insights: Extract action items from meeting transcripts and link them back to the original
+source.
+By making every answer traceable to the original document, VeriCompliance AI reduces AI
+hallucinations and helps organizations make decisions they can trust
 
-1. Clone the repository and navigate to root:
-   ```bash
-   git clone [https://github.com/vericompliance/vericompliance-ai.git](https://github.com/vericompliance/vericompliance-ai.git)
-   cd vericompliance-ai
+🚀 Key Technical Features
+
+.Grounded RAG Pipeline:Implements a sophisticated Retrieval-Agumented
+Generation(RAG)system with structured citations including exact Page,Line ,and
+Paragraph metadata
+2.Deterministic Refusal Protocol: A safety layer that refuses to output responses if
+semantic search confidence drops below a specific threshold ,ensuring zero guesswork.
+3.ComplianceAudit Engine: Automates the evaluation of unstructured documents
+against customisable or template-based compliance matrices.
+4.Hardened Security:Built with enterprise-level RBAC,Multi-Tenant isolation,JWT with
+Argon2, and encrypted vector storage
+
+🛠Technical Architecture & Data Flow
+
+<img width="792" height="689" alt="image" src="https://github.com/user-attachments/assets/fb56dd09-ffcf-4add-b320-e69c3fd67bce" />
+
+🛠 Tech Stack
+
+<img width="735" height="269" alt="image" src="https://github.com/user-attachments/assets/366a6ada-51e3-41e1-ae8f-f81324dac502" />
+
+📦 Quick Start(Docker)
+
+Get the full stack running in under 2 minutes:
+
+git clone https://github.com/nini747heyyy/VeriComplianceAI.git
+cd VeriComplianceAI
+docker-compose up /-build
+
+Access the dashboard at http://localhost:3000 .
+Get the full stack running in under 2 minutes:
+📦
+👥 The Team
+Built up ⚖ 💻 by the team Gryffindor- Anushka Sharma(Team lead), Devangi
+Banerjee, Sreeja Guha for the Hackathon-Deploy or Redacted,2026
