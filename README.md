@@ -7,7 +7,7 @@ hallucinations in high-stakes legal, regulatory, and corporate compliance operat
 combining Deterministic Refusal Protocols with Granular Grounding, we ensure every
 answer is backed by verifiable evidence.
 
-##🚀 The Problem
+## 🚀 The Problem
 
 Organizations deal with a huge number of documents every day, including company policies,
 compliance guidelines, contracts, legal documents, and meeting transcripts. Most of this
@@ -24,7 +24,7 @@ The challenge is to build a knowledge and compliance agent that understands unst
 documents, gives reliable answers based only on the provided data, and clearly shows the source
 of every response.
 
-##✨Our Solution- VeriCompliance AI
+## ✨Our Solution- VeriCompliance AI
 
 VeriCompliance AI is a knowledge and compliance assistant designed to provide accurate and
 trustworthy answers from uploaded documents. Instead of relying on general AI knowledge, it searches
@@ -32,7 +32,7 @@ through the provided files and generates responses only from verified content.
 
 <img width="1418" height="902" alt="image" src="https://github.com/user-attachments/assets/07e5a775-479e-4d1f-a84c-d9941159531b" />
 
- ###Trust, Grounding & Evidence — At a Glance
+ ### Trust, Grounding & Evidence — At a Glance
 
 •Verified Knowledge: Upload policies, contracts, compliance manuals, and meeting transcripts.
 
@@ -49,7 +49,7 @@ source.
 By making every answer traceable to the original document, VeriCompliance AI reduces AI
 hallucinations and helps organizations make decisions they can trust
 
-##🚀 Key Technical Features
+## 🚀 Key Technical Features
 
 1. Grounded RAG Pipeline: Implements a sophisticated Retrieval-Augmented
 Generation(RAG)system with structured citations including exact Page, Line, and
@@ -64,15 +64,15 @@ against customisable or template-based compliance matrices.
 4. Hardened Security: Built with enterprise-level RBAC, Multi-Tenant isolation, JWT with
 Argon2, and encrypted vector storage
 
-##🛠Technical Architecture & Data Flow
+## 🛠Technical Architecture & Data Flow
 
 <img width="792" height="689" alt="image" src="https://github.com/user-attachments/assets/fb56dd09-ffcf-4add-b320-e69c3fd67bce" />
 
-##🛠 Tech Stack
+## 🛠 Tech Stack
 
 <img width="735" height="269" alt="image" src="https://github.com/user-attachments/assets/366a6ada-51e3-41e1-ae8f-f81324dac502" />
 
-##📦 Quick Start(Docker)
+## 📦 Quick Start(Docker)
 
 Get the full stack running in under 2 minutes:
 
