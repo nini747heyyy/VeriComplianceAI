@@ -1,8 +1,13 @@
+/* Import Tailwind CSS's base/reset styles */
 @tailwind base;
+/* Import Tailwind's component classes */
 @tailwind components;
+/* Import Tailwind's utility classes */
 @tailwind utilities;
-
+/* Global styling for the entire webpage */
 body {
+  /* Set a dark background color */
   background-color: #0d0f12;
+   /* Set the default text color to a light shade */
   color: #f1f5f9;
 }
