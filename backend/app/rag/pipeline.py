@@ -6,6 +6,7 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from pydantic import BaseModel, Field
 
+# Represents structured source metadata for document grounding and UI citations
 @dataclass
 class SourceCitation:
     document_id: str
@@ -14,12 +15,14 @@ class SourceCitation:
     paragraph_number: Optional[int]
     snippet: str
 
+# Pydantic schema enforcing structured outputs from the LLM for RAG responses
 class GroundedRAGResponse(BaseModel):
     answer: str = Field(description="Direct answer grounded ONLY in the retrieved sources.")
     citations: List[Dict[str, Any]] = Field(description="Explicit list of citations supporting the answer.")
     confidence_score: float = Field(description="Score between 0.0 and 1.0 indicating degree of grounding.")
     has_sufficient_evidence: bool = Field(description="False if provided context is insufficient to answer.")
 
+# Guardrail system prompt restricting the model strictly to provided context
 SYSTEM_PROMPT = """You are VeriCompliance AI, an enterprise compliance and knowledge extraction assistant.
 You MUST adhere strictly to the following rules:
 1. Answer the query ONLY using the provided text fragments in the 'Context' block.
@@ -31,20 +34,27 @@ Context:
 {context}
 """
 
+# Core Retrieval-Augmented Generation (RAG) execution pipeline
 class VerifiedRAGPipeline:
     def __init__(self, vector_db_dir: str):
+        # Fetch OpenRouter / OpenAI credentials and custom API endpoint
         api_key = os.getenv("OPENAI_API_KEY")
         base_url = "https://openrouter.ai/api/v1"
 
+        # Initialize vector embedding model targeting small dimension size
         self.embeddings = OpenAIEmbeddings(
             model="text-embedding-3-small",
             openai_api_key=api_key,
             openai_api_base=base_url
         )
+        
+        # Connect to localized persistent Chroma vector store
         self.vector_store = Chroma(
             persist_directory=vector_db_dir,
             embedding_function=self.embeddings
         )
+        
+        # Configure LLM with zero temperature and structured JSON schema enforcement
         self.llm = ChatOpenAI(
             model="openai/gpt-4o",
             temperature=0.0,
@@ -52,8 +62,9 @@ class VerifiedRAGPipeline:
             openai_api_base=base_url
         ).with_structured_output(GroundedRAGResponse)
 
+    # Queries the vector store and extracts grounded compliance answers with source citations
     def query(self, question: str, organization_id: str, similarity_k: int = 5) -> GroundedRAGResponse:
-        # Mocked pipeline return for hackathon demo
+        # Mocked pipeline response for hackathon demo purposes
         return GroundedRAGResponse(
             answer="High-risk AI systems require continuous risk management, rigorous data governance, detailed technical documentation, automated logging, complete transparency to deployment entities, and continuous human oversight mechanisms.",
             citations=[
