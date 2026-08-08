@@ -32,6 +32,8 @@ through the provided files and generates responses only from verified content.
 
 <img width="1418" height="902" alt="image" src="https://github.com/user-attachments/assets/07e5a775-479e-4d1f-a84c-d9941159531b" />
 
+ Trust, Grounding & Evidence — At a Glance
+
 •Verified Knowledge: Upload policies, contracts, compliance manuals, and meeting transcripts.
 
 • Traceable Answers: Ask questions and receive answers supported by document citation
@@ -100,7 +102,8 @@ Access the dashboard at:
 > **Built under pressure. Driven by innovation.  
 > Engineered for trustworthy AI.**
 
- 🛡️ Trust, Grounding & Evidence — At a Glance
-
+ 
+
+
 
 
