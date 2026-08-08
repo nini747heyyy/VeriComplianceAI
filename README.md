@@ -30,6 +30,8 @@ VeriCompliance AI is a knowledge and compliance assistant designed to provide ac
 trustworthy answers from uploaded documents. Instead of relying on general AI knowledge, it searches
 through the provided files and generates responses only from verified content.
 
+<img width="1418" height="902" alt="image" src="https://github.com/user-attachments/assets/07e5a775-479e-4d1f-a84c-d9941159531b" />
+
 •Verified Knowledge: Upload policies, contracts, compliance manuals, and meeting transcripts.
 
 • Traceable Answers: Ask questions and receive answers supported by document citation
@@ -72,13 +74,16 @@ Argon2, and encrypted vector storage
 
 Get the full stack running in under 2 minutes:
 
+```
 git clone https://github.com/nini747heyyy/VeriComplianceAI.git
 
 cd VeriComplianceAI
 
 docker-compose up /-build
+```
 
-Access the dashboard at http://localhost:3000 .
+Access the dashboard at:
+```http://localhost:3000``` .
 
 ## 🚀 Meet the Team — The Compliance Crew
 
@@ -86,7 +91,7 @@ Access the dashboard at http://localhost:3000 .
 
  🧑‍💻 Names:
 
-1. Anushka Sharma ( Team Lead )
+1. Anuska Sharma ( Team Lead )
 
 2. Devangi Banerjee
  
@@ -96,7 +101,6 @@ Access the dashboard at http://localhost:3000 .
 > Engineered for trustworthy AI.**
 
  🛡️ Trust, Grounding & Evidence — At a Glance
-
-<img width="1418" height="902" alt="image" src="https://github.com/user-attachments/assets/07e5a775-479e-4d1f-a84c-d9941159531b" />
+
 
 
