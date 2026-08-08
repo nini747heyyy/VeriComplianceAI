@@ -34,7 +34,7 @@ through the provided files and generates responses only from verified content.
 
  ### Trust, Grounding & Evidence — At a Glance
 
-•Verified Knowledge: Upload policies, contracts, compliance manuals, and meeting transcripts.
+• Verified Knowledge: Upload policies, contracts, compliance manuals, and meeting transcripts.
 
 • Traceable Answers: Ask questions and receive answers supported by document citation
 
@@ -43,7 +43,7 @@ through the provided files and generates responses only from verified content.
 • Compliance Auditing: Check documents against compliance rules and receive pass or fail reports
 with supporting evidence.
 
-• Action able Insights: Extract action items from meeting transcripts and link them back to the original
+• Actionable Insights: Extract action items from meeting transcripts and link them back to the original
 source.
 
 By making every answer traceable to the original document, VeriCompliance AI reduces AI
